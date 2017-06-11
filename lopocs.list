@@ -1,0 +1,51 @@
+;
+; Archive created at 2017-06-11 15:26:46 CEST
+;     dbname: lopocs
+;     TOC Entries: 38
+;     Compression: -1
+;     Dump Version: 1.12-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 9.6.3
+;     Dumped by pg_dump version: 9.6.3
+;
+;
+; Selected TOC Entries:
+;
+3649; 1262 1672621 DATABASE - lopocs elemoine
+6; 2615 2200 SCHEMA - public postgres
+3650; 0 0 COMMENT - SCHEMA public postgres
+1; 3079 12393 EXTENSION - plpgsql 
+3651; 0 0 COMMENT - EXTENSION plpgsql 
+3; 3079 1674113 EXTENSION - pointcloud 
+3652; 0 0 COMMENT - EXTENSION pointcloud 
+4; 3079 1672622 EXTENSION - postgis 
+3653; 0 0 COMMENT - EXTENSION postgis 
+2; 3079 1674203 EXTENSION - pointcloud_postgis 
+3654; 0 0 COMMENT - EXTENSION pointcloud_postgis 
+1447; 1255 1674213 FUNCTION public clean_lopocs() elemoine
+205; 1259 1674214 TABLE public airport elemoine
+206; 1259 1674220 SEQUENCE public airport_id_seq elemoine
+3655; 0 0 SEQUENCE OWNED BY public airport_id_seq elemoine
+207; 1259 1674222 TABLE public pointcloud_lopocs elemoine
+208; 1259 1674230 SEQUENCE public pointcloud_lopocs_id_seq elemoine
+3656; 0 0 SEQUENCE OWNED BY public pointcloud_lopocs_id_seq elemoine
+209; 1259 1674232 TABLE public pointcloud_lopocs_outputs elemoine
+3499; 2604 1674238 DEFAULT public airport id elemoine
+3501; 2604 1674239 DEFAULT public pointcloud_lopocs id elemoine
+3494; 0 1674115 TABLE DATA public pointcloud_formats elemoine
+3642; 0 1674222 TABLE DATA public pointcloud_lopocs elemoine
+3658; 0 0 SEQUENCE SET public pointcloud_lopocs_id_seq elemoine
+3644; 0 1674232 TABLE DATA public pointcloud_lopocs_outputs elemoine
+3495; 0 1672919 TABLE DATA public spatial_ref_sys elemoine
+3640; 0 1674214 TABLE DATA public airport elemoine
+3657; 0 0 SEQUENCE SET public airport_id_seq elemoine
+3505; 2606 1683770 CONSTRAINT public airport airport_pkey elemoine
+3507; 2606 1683772 CONSTRAINT public pointcloud_lopocs pointcloud_lopocs_pkey elemoine
+3509; 2606 1683774 CONSTRAINT public pointcloud_lopocs uniq_table_col elemoine
+3512; 2606 1683776 CONSTRAINT public pointcloud_lopocs_outputs uniqschema elemoine
+3503; 1259 1683778 INDEX public airport_pc_envelopegeometry_idx elemoine
+3510; 1259 1683779 INDEX public uniqidx_pcid_stored elemoine
+3513; 2606 1683780 FK CONSTRAINT public pointcloud_lopocs_outputs pointcloud_lopocs_outputs_id_fkey elemoine
+3514; 2606 1683785 FK CONSTRAINT public pointcloud_lopocs_outputs pointcloud_lopocs_outputs_pcid_fkey elemoine
